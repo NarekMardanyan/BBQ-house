@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Барбекю Хаус — Хоровац от Варпета Гриши</title>
+  <meta name="description" content="Классический армянский хоровац из свиной шеи: рецепт Варпета Гриши для канала Барбекю Хаус.">
+  <style>
+    :root {
+      --bg: #1a1210;
+      --card: #251a16;
+      --text: #f3e9e2;
+      --muted: #bfa99b;
+      --accent: #e8662a;
+      --accent-2: #f2a541;
+      --line: #3a2a23;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    header {
+      padding: 56px 16px 40px;
+      text-align: center;
+      background: radial-gradient(ellipse at bottom, #5a2410 0%, var(--bg) 70%);
+      border-bottom: 1px solid var(--line);
+    }
+    .channel {
+      display: inline-block;
+      padding: 4px 14px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      color: var(--accent-2);
+      font-size: 14px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 18px 0 8px; font-size: clamp(30px, 6vw, 48px); line-height: 1.15; }
+    .subtitle { margin: 0; color: var(--muted); }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .fact {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+    .fact b { display: block; font-size: 20px; color: var(--accent-2); }
+    .fact span { color: var(--muted); font-size: 14px; }
+    section { margin-bottom: 36px; }
+    h2 {
+      font-size: 24px;
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+    ul.ingredients { list-style: none; padding: 0; margin: 0; }
+    ul.ingredients li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    ul.ingredients li span:last-child { color: var(--muted); text-align: right; white-space: nowrap; }
+    ol.steps { padding: 0; margin: 0; list-style: none; counter-reset: step; }
+    ol.steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 0 0 20px 52px;
+    }
+    ol.steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0; top: 0;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+    }
+    ol.steps li b { display: block; }
+    blockquote {
+      margin: 0;
+      padding: 20px 22px;
+      background: var(--card);
+      border-left: 4px solid var(--accent-2);
+      border-radius: 0 12px 12px 0;
+      font-style: italic;
+    }
+    blockquote footer { margin-top: 8px; color: var(--muted); font-style: normal; font-size: 15px; }
+    .tips li { margin-bottom: 8px; }
+    .site-footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding: 24px 16px;
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="channel">🔥 Барбекю Хаус</span>
+    <h1>Хоровац от Варпета Гриши</h1>
+    <p class="subtitle">Настоящий армянский шашлык из свиной шеи — просто, честно, на углях</p>
+  </header>
+
+  <main>
+    <div class="facts">
+      <div class="fact"><b>4–6</b><span>порций</span></div>
+      <div class="fact"><b>4–12 ч</b><span>маринад</span></div>
+      <div class="fact"><b>20–25 мин</b><span>на углях</span></div>
+      <div class="fact"><b>Легко</b><span>сложность</span></div>
+    </div>
+
+    <section>
+      <blockquote>
+        «Хорошему мясу не нужен уксус и кетчуп. Соль, лук, перец и правильный жар — вот и весь секрет».
+        <footer>— Варпет Гриша</footer>
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Ингредиенты</h2>
+      <ul class="ingredients">
+        <li><span>Свиная шея (с прослойками жира)</span><span>2 кг</span></li>
+        <li><span>Репчатый лук</span><span>4–5 шт.</span></li>
+        <li><span>Соль крупная</span><span>≈ 1,5 ст. л.</span></li>
+        <li><span>Чёрный перец, свежемолотый</span><span>1 ч. л.</span></li>
+        <li><span>Сушёный базилик (рейган) или тимьян (урц)</span><span>1 ч. л.</span></li>
+        <li><span>Паприка сладкая</span><span>1 ч. л.</span></li>
+        <li><span>Для подачи: лаваш, зелень, помидоры, перец, баклажаны</span><span>по вкусу</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Приготовление</h2>
+      <ol class="steps">
+        <li><b>Нарезка.</b> Нарежьте шею крупными кусками 5–6 см. Жир не срезайте — он даёт сочность.</li>
+        <li><b>Лук.</b> Половину лука натрите или порежьте мелко и хорошо помните руками, чтобы дал сок. Вторую половину — кольцами.</li>
+        <li><b>Маринад.</b> Смешайте мясо с солью, перцем, паприкой и зеленью, добавьте лук. Перемешайте руками 2–3 минуты. Никакого уксуса!</li>
+        <li><b>Отдых.</b> Накройте и уберите в холодильник минимум на 4 часа, лучше на ночь. За час до жарки достаньте мясо.</li>
+        <li><b>Угли.</b> Разожгите дрова (лучше виноградная лоза или фруктовые). Ждите, пока угли покроются белым пеплом и пламени не будет.</li>
+        <li><b>Шампуры.</b> Нанизывайте плотно, кусок к куску, жирной стороной наружу. Лук с мясом не нанизывайте — он сгорит.</li>
+        <li><b>Жарка.</b> Держите на высоте ~10–15 см от углей, переворачивайте каждые 2–3 минуты. Если капает жир и вспыхивает — сбрызните угли водой, а не мясо.</li>
+        <li><b>Готовность.</b> Надрежьте самый толстый кусок: сок должен быть прозрачным. Обычно 20–25 минут.</li>
+        <li><b>Овощи.</b> Параллельно запеките на углях баклажаны, помидоры и перцы — для хоровац-салата.</li>
+        <li><b>Подача.</b> Снимайте мясо прямо на лаваш, сверху маринованный лук и зелень. Накройте вторым лавашем на 2 минуты — пусть «дойдёт».</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Советы Варпета</h2>
+      <ul class="tips">
+        <li>Мясо солите сразу — соль и лук делают маринад, больше ничего не нужно.</li>
+        <li>Не жарьте на открытом огне: хоровац любит ровный жар углей.</li>
+        <li>Баклажаны, перцы и помидоры после запекания очистите, порубите с чесноком, солью и зеленью — это классический хоровац-салат.</li>
+        <li>Хоровац не ждёт: ешьте горячим, пока лаваш пропитан соком.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © Барбекю Хаус · Подписывайтесь на канал, жмите колокольчик 🔔
+  </footer>
+</body>
+</html>
