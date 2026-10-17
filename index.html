@@ -99,6 +99,28 @@
       border-radius: 0 12px 12px 0;
       font-style: italic;
     }
+    .master {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .master-photo {
+      flex: none;
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      background: var(--card);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      font-size: 48px;
+    }
+    .master-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .master blockquote { flex: 1; }
+    @media (max-width: 520px) {
+      .master { flex-direction: column; text-align: center; }
+      .master blockquote { border-left: 0; border-top: 4px solid var(--accent-2); border-radius: 0 0 12px 12px; }
+    }
     blockquote footer { margin-top: 8px; color: var(--muted); font-style: normal; font-size: 15px; }
     .tips li { margin-bottom: 8px; }
     .site-footer {
@@ -125,7 +147,11 @@
       <div class="fact"><b>Легко</b><span>сложность</span></div>
     </div>
 
-    <section>
+    <section class="master">
+      <div class="master-photo">
+        <!-- Фото мастера: положите файл grisha.jpg рядом с index.html -->
+        <img src="grisha.jpg" alt="Варпет Гриша" onerror="this.replaceWith('👨‍🍳')">
+      </div>
       <blockquote>
         «Хорошему мясу не нужен уксус и кетчуп. Соль, лук, перец и правильный жар — вот и весь секрет».
         <footer>— Варпет Гриша</footer>
